@@ -190,16 +190,125 @@
 }
 
 #i:hover {
-    
     filter: invert(100%);
     -webkit-filter: invert(100%);
-
 }
 
 #i:hover body {
     
     background-color: black;
+}
+
+/*---------------10---------------*/
+#counter {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------------11---------------*/
+#k {
+    background-color: #EDEDED;
+    cursor: auto;
+}
+
+.centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blue {
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #1E93E3;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+#red {
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+    background-color:  #FF4500;
+    display: inline-block;
+    margin-right: 80px;
+    cursor: pointer;
     
 
 }
+    
+#k .num {
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;   
+}
+
+#pod {
+    background-image: url(../Images/Pod.gif);
+    opacity: 0;
+    background-size: cover;
+}
+
+/*---------------12---------------*/
+#l {
+    background-color: #FFD6AD;
+    cursor: auto;
+}
+
+#l .circle {
+    background-color: #FF9228;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                transition: all 1500ms ease;   
+}
+
+#l .circle:hover {
+    cursor:pointer;
+}
+
+#l .circle:active {
+    width: 700px;
+    border-radius: 350px;
+    height: 700px;
+}
+
+/*---------------13---------------*/
+#m {
+    background-color: #305075;
+}
+
+#moon {
+    background-color: #FFEFB3; 
+}
+
+#cut {
+    background-color: #305075;
+    z-index: 1;
+    top: 42%;
+    left: 45%;
+    
+}
+
+
+
 

@@ -111,17 +111,20 @@ $(document).ready(function(){
     });
     
     /*---------10---------*/
-    var j= true;
+    var j= 0;
     $("#j").click(function(){
-        if (j==true) {
-            alert("YOU'VE CLICK THE BIG PINK DOT " + x + " TIME");
-            j=false;
-        }
+        j++;
+        $("#counter").html(j);
         
-        else {
-            alert("YOU'VE CLICK THE BIG PINK DOT " + x + " TIMES");
-            j=true;
-        }
+    });
+    
+    /*---------11---------*/
+    var k= true;
+    $("#blue").click(function(){
+        $( "#red" ).animate({opacity:"0"}, 1000);
+        $( "#blue" ).animate({opacity:"0"}, 1000);
+        $( "#pod" ).delay( 1000 ).animate({opacity:".2"}, 2000);
+        
         
     });
     
