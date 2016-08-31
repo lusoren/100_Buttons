@@ -1,0 +1,205 @@
+/*---------------1---------------*/
+#a {
+    background-color: #FFC9FF;
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------2---------------*/
+#b {
+    background-color: #589FBA;
+    -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                -o-transition: all 500ms ease;
+                transition: all 500ms ease;
+}
+
+#b:active {
+    background-color: #FF9228;
+}
+
+/*---------------3---------------*/
+.circle {
+    width:100px;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    
+    border-radius: 50px;
+    
+    outline: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#c .circle {
+    background-color: black;
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------4---------------*/
+#d .circle {
+    
+    width:150px;
+    height:150px;
+    border-radius: 0;
+
+    background-color: black;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------5---------------*/
+#e {
+    background-color: #719140;
+}
+
+#e .circle {
+    width:300px;
+    height:100px;
+    border-radius: 100px;
+    max-width: 80%;
+
+    background-color: #BDFF5B;
+    
+    -webkit-transition: all 1000ms ease-in;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------6---------------*/
+#f {
+    background-color: #FFEFB3;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    
+}
+
+#f .full {
+    background-color:#AEBAD6;
+}
+
+/*---------------7---------------*/
+.third {
+    height: 33.33%;
+    width: 100%;
+    position: absolute;
+    
+    width:100%;
+}
+
+#top {
+    top: 0;
+    left: 0;
+    background-color: #FFE23C;
+    
+    width: 0%;
+}
+
+#mid {
+    top: 33.33%;
+    left: 0;
+    background-color: #FF4500;
+    
+    width: 0%;
+}
+
+#bot {
+    top: 66.66%;
+    left: 0;
+    background-color: #1E93E3;
+    
+    width: 0%;
+}
+
+#topl {
+    top: 0;
+    left: 0;
+    background-color: #1E93E3;
+    
+    width:100%;
+    z-index: -1;
+}
+
+#midl {
+    top: 33.33%;
+    left: 0;
+    background-color: #FFE23C;
+    
+    width:100%;
+    z-index: -1;
+}
+
+#botl {
+    top: 66.66%;
+    left: 0;
+    background-color: #FF4500;
+    
+    width:100%;
+    z-index: -1;
+}
+
+/*---------------8---------------*/
+#h {
+    
+}
+
+#h .circle {
+    background-color: #FCF4FF;
+    height: 350px;
+    width: 350px;
+    
+    border-radius: 175px;
+
+}
+
+/*---------------9---------------*/
+#i {
+    background-color: white;
+    background-size: 120%;
+    background-position: center;
+    
+    
+}
+
+#i .num {
+    
+}
+
+#i:hover {
+    
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+
+}
+
+#i:hover body {
+    
+    background-color: black;
+    
+
+}
+
