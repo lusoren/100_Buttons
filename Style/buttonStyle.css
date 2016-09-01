@@ -1,3 +1,27 @@
+.full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.circle {
+    width:100px;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    
+    border-radius: 50px;
+    
+    outline: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*---------------1---------------*/
 #a {
     background-color: #FFC9FF;
@@ -23,22 +47,6 @@
 }
 
 /*---------------3---------------*/
-.circle {
-    width:100px;
-    height:100px;
-    padding: 0;
-    margin: 0;
-    
-    border-radius: 50px;
-    
-    outline: none;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 #c .circle {
     background-color: black;
     -webkit-transition: all 1000ms ease;
@@ -89,14 +97,7 @@
     background-color: #FFEFB3;
 }
 
-.full {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left:0;
-    
-}
+
 
 #f .full {
     background-color:#AEBAD6;
@@ -178,7 +179,7 @@
 
 /*---------------9---------------*/
 #i {
-    background-color: white;
+    background-color: black;
     background-size: 120%;
     background-position: center;
     
@@ -189,16 +190,11 @@
     
 }
 
-#i:hover {
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
-}
-
-#i:hover body {
+#halfWhite {
+        width: 50%;
+        background-color: white;
+    }
     
-    background-color: black;
-}
-
 /*---------------10---------------*/
 #counter {
     font-family: 'Helvetica', sans-serif;
@@ -234,7 +230,7 @@
     background-color: #1E93E3;
     display: inline-block;
     cursor: pointer;
-    
+    margin: 0;
 }
 
 #red {
@@ -244,8 +240,7 @@
     background-color:  #FF4500;
     display: inline-block;
     margin-right: 80px;
-    cursor: pointer;
-    
+    cursor: pointer;  
 
 }
     
@@ -294,7 +289,11 @@
 
 /*---------------13---------------*/
 #m {
-    background-color: #305075;
+    background-color: #454B52;
+}
+
+#m .num {
+    color: white;
 }
 
 #moon {
@@ -302,13 +301,26 @@
 }
 
 #cut {
-    background-color: #305075;
+    background-color: #454B52;
     z-index: 1;
     top: 42%;
     left: 45%;
+}
+
+/*---------------14---------------*/
+#n {
+    background-color: #AEBAD6;
+    overflow: inherit;
     
 }
 
+#n .num {
+    z-index: 5;
+}
 
-
-
+#n .circle {
+    z-index: 4;
+    border-radius: 0;
+    background-color: #7D8DB2;
+;
+}

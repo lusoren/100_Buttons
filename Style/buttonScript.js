@@ -110,6 +110,29 @@ $(document).ready(function(){
         
     });
     
+    /*---------9---------*/
+    var i= true;
+    $("#i").click(function(){
+        if (i==true) {
+            $( "body" ).css("-webkit-filter", "invert(100%)");
+            $( "body" ).css("filter", "invert(100%)");
+            $( "body" ).css("background-color", "black");
+            $( "#i" ).css("-webkit-filter", "invert(100%)");
+            $( "#i" ).css("filter", "invert(100%)");
+            i=false;
+        }
+        
+        else {
+            $( "body" ).css("-webkit-filter", "invert(0)");
+            $( "body" ).css("filter", "invert(0)");
+            $( "body" ).css("background-color", "white");
+            $( "#i" ).css("-webkit-filter", "invert(0)");
+            $( "#i" ).css("filter", "invert(0)");
+            i=true;
+        }
+        
+    });
+    
     /*---------10---------*/
     var j= 0;
     $("#j").click(function(){
@@ -123,9 +146,46 @@ $(document).ready(function(){
     $("#blue").click(function(){
         $( "#red" ).animate({opacity:"0"}, 1000);
         $( "#blue" ).animate({opacity:"0"}, 1000);
-        $( "#pod" ).delay( 1000 ).animate({opacity:".2"}, 2000);
+        $( "#pod" ).delay( 1000 ).animate({opacity:"1"}, 2000);
         
         
+    });
+    
+    /*---------13---------*/
+    var m= true;
+    $("#m").click(function(){
+        if (m==true) {
+            $( "body" ).css("background-color", "#454B52");
+            $( "body" ).css("opacity", ".2");
+            
+            
+            m=false;
+        }
+        else {
+            $( "body" ).css("background-color", "white");
+            $( "body" ).css("opacity", "1");
+            
+            m=true;
+        }
+    });
+    
+    /*---------14---------*/
+    var n= true;
+    $("#n").click(function(){
+        if (n==true) {
+            $( "#invade" ).animate({width: "100%"}, 1000);
+            $( "#invade" ).animate({height: "750px"}, 1300);
+            $( "#invade" ).animate({width: "300%"}, 1000);
+    
+            n=false;
+        }
+        else {
+            $( "#invade" ).animate({width: "100%"}, 1000);
+            $( "#invade" ).animate({height: "100px"}, 1300);
+            $( "#invade" ).animate({width: "100px"}, 1000);
+            
+            n=true;
+        }
     });
     
 });
