@@ -144,9 +144,17 @@ $(document).ready(function(){
     /*---------11---------*/
     var k= true;
     $("#blue").click(function(){
-        $( "#red" ).animate({opacity:"0"}, 1000);
-        $( "#blue" ).animate({opacity:"0"}, 1000);
-        $( "#pod" ).delay( 1000 ).animate({opacity:"1"}, 2000);
+        $( "#red" ).animate({opacity:"0"}, 600);
+        $( "#blue" ).animate({opacity:"0"}, 600);
+        $( "#notMatrix" ).delay( 600 ).animate({opacity:".3"}, 1000);
+        
+        
+    });
+    
+    $("#red").click(function(){
+        $( "#red" ).animate({opacity:"0"}, 600);
+        $( "#blue" ).animate({opacity:"0"}, 600);
+        $( "#matrix" ).delay( 600 ).animate({opacity:".3"}, 1000);
         
         
     });
@@ -156,14 +164,16 @@ $(document).ready(function(){
     $("#m").click(function(){
         if (m==true) {
             $( "body" ).css("background-color", "#454B52");
-            $( "body" ).css("opacity", ".2");
+            $( ".cell" ).css("opacity", ".1");
+            $( "#m" ).css("opacity", "1");
+            
             
             
             m=false;
         }
         else {
             $( "body" ).css("background-color", "white");
-            $( "body" ).css("opacity", "1");
+            $( ".cell" ).css("opacity", "1");
             
             m=true;
         }
@@ -175,12 +185,12 @@ $(document).ready(function(){
         if (n==true) {
             $( "#invade" ).animate({width: "100%"}, 1000);
             $( "#invade" ).animate({height: "750px"}, 1300);
-            $( "#invade" ).animate({width: "300%"}, 1000);
+   
     
             n=false;
         }
         else {
-            $( "#invade" ).animate({width: "100%"}, 1000);
+        
             $( "#invade" ).animate({height: "100px"}, 1300);
             $( "#invade" ).animate({width: "100px"}, 1000);
             
@@ -188,4 +198,110 @@ $(document).ready(function(){
         }
     });
     
+    /*---------15---------*/
+    $("#o").click(function(){
+            
+            var ad = Math.round(Math.random() * 255);
+            var bd = Math.round(Math.random() * 255);
+            var cd = Math.round(Math.random() * 255);
+            $( "#o" ).css("background-color", "RGB(" + ad + "," + bd + "," + cd + ")");
+    });
+    
+    /*---------15---------*/
+
+
+    $("#p").click(function(){
+            var a = Math.random() * 255;
+            var b = Math.random() * 255;
+            var c = Math.random() * 255;
+            $( "#o" ).css("background-color", "RGB(" + col + "," + col + "," + col + ")");
+            
+            
+    });
+    
+    /*---------17---------*/
+    var q= true;
+    $("#q").click(function(){
+        if (q==true) {
+            $( "#lock" ).css("position", "fixed");
+            $( "#lock" ).css("display", "inherit");
+            
+            q=false;
+        }
+        else {
+
+            $( "#lock" ).css("display", "none");
+
+            q=true;
+            
+        }
+   
+            
+    });
+    
+    /*---------18---------*/
+    var r= true;
+    $("#r").click(function(){
+        if (r==true) {
+            $( "#spin" ).css( "-webkit-transform", "rotate(90deg)");
+            $( "#spin" ).css( "-ms-transform", "rotate(180deg)");
+            $( "#spin" ).css( "transform", "rotate(180deg)");
+            $( "#spin" ).css( "top", "46%");
+            $( "#spin" ).css( "left", "-50%");    
+            r=false;
+        }
+        else {
+            $( "#spin" ).css( '-webkit-transform', "rotate(0deg);");
+            $( "#spin" ).css( '-ms-transform', "rotate(0deg);");
+            $( "#spin" ).css( 'transform', "rotate(0deg)");
+            r=true;
+        }    
+    });
+    
+    /*---------19---------*/
+    var s= true;
+    $("#s").click(function(){
+        if (s==true) {
+        
+            s=false;
+        }
+        else {
+        
+            s=true;
+        }    
+    });
+    
+    /*---------20---------*/
+    var t= true;
+    $("#t").click(function(){
+        if (t==true) {
+            
+            $("#yes").html('NO');
+            t=false;
+        }
+        else {
+            $("#yes").html('YES');
+            t=true;
+        }    
+    });
+    
+    /*---------21---------*/
+    var u= true;
+    $("#u").click(function(){
+        if (u==true) {
+
+            $( "body" ).css( "-webkit-filter", "hue-rotate(90deg)");
+            $( "body" ).css( "filter", "hue-rotate(90deg)");
+            
+            
+            u=false;
+        }
+        else {
+            $( "body" ).css( "-webkit-filter", "hue-rotate(0deg)");
+            $( "body" ).css( "filter", "hue-rotate(0deg)");
+            
+            u=true;
+        }    
+    });
+
 });

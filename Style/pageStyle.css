@@ -1,13 +1,13 @@
 body {
     margin: auto;
-    max-width: 1800px;
+    max-width: 2200px;
+
 }
 
 .cell {
     
     width: 33.33%;
     height: 250px;
-    max-width: 600px;
     
     display: inline-block;
     margin: 0;
@@ -19,6 +19,7 @@ body {
 }
 
 p::selection { display: none; }
+a::selection { display: none; }
 
 .cell:hover {
     cursor: pointer;
@@ -38,6 +39,13 @@ p::selection { display: none; }
     margin: 0;
     
     z-index: 3;
+}
+
+@media (min-width:1800px) {
+    
+    .cell {
+        width: 25%;
+    }
 }
 
 @media (max-width:1200px) {
