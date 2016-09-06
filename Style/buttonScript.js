@@ -166,11 +166,11 @@ $(document).ready(function(){
             $( "body" ).css("background-color", "#454B52");
             $( ".cell" ).css("opacity", ".1");
             $( "#m" ).css("opacity", "1");
-            
-            
+            $( "#ca" ).css("opacity", "1");
             
             m=false;
         }
+        
         else {
             $( "body" ).css("background-color", "white");
             $( ".cell" ).css("opacity", "1");
@@ -207,14 +207,11 @@ $(document).ready(function(){
             $( "#o" ).css("background-color", "RGB(" + ad + "," + bd + "," + cd + ")");
     });
     
-    /*---------15---------*/
-
-
+    /*---------16---------*/
+    var p= true;
     $("#p").click(function(){
-            var a = Math.random() * 255;
-            var b = Math.random() * 255;
-            var c = Math.random() * 255;
-            $( "#o" ).css("background-color", "RGB(" + col + "," + col + "," + col + ")");
+            $( "#drop" ).css("top", "50%");
+            $( "#drop" ).animate({top: "120%"}, 1300);
             
             
     });
@@ -262,11 +259,13 @@ $(document).ready(function(){
     var s= true;
     $("#s").click(function(){
         if (s==true) {
-        
+                $( "#cover" ).css( 'position', 'fixed');
+                $( "#cover" ).css( 'z-index', '10');
             s=false;
         }
         else {
-        
+                $( "#cover" ).css( 'position', 'absolute');
+                $( "#cover" ).css( 'z-index', '0');
             s=true;
         }    
     });
@@ -302,6 +301,89 @@ $(document).ready(function(){
             
             u=true;
         }    
+    });
+    
+    /*---------22---------*/
+    var v= true;
+    $("#v").click(function(){
+        if (v==true) {
+                $( "#c" ).css( "display", "none");
+            v=false;
+        }
+        else {
+                $( "#c" ).css( "display", "inherit");
+            v=true;
+        }    
+    });
+    
+    /*---------23---------*/
+    var w= true;
+    $("#w").click(function(){
+
+        $( "#w" ).animate({width:"0%"}, 800);
+
+    });
+    
+    /*---------24---------*/
+    var x= true;
+    $("#x").click(function(){
+        $( "body" ).scrollTop(0);
+            
+
+    });
+    
+    /*---------25---------*/
+    var y= true;
+    $("#y").click(function(){
+        location.reload();
+    });
+    
+    /*---------26---------*/
+    var z= true;
+    $("#z").click(function(){
+        if (z==true) {
+                $( "#side" ).animate({left:"100%"}, 1200);
+            z=false;
+        }
+        else {
+                $( "#side" ).animate({left:"0%"}, 1200);
+            z=true;
+        }    
+    });
+    
+    /*---------27---------*/
+    $("#aa").click(function(){
+        var aa= Math.round(Math.random() * 10);
+        if (aa==3) {
+            alert("WINNER")
+        }
+        else {
+            alert("YOU LOST!!!")
+        }
+    });
+    
+    /*---------28---------*/
+    var ba= true;
+    $("#ba").click(function(){
+        if (ba==true) {
+            $( "body" ).css( "cursor", "help");
+            ba=false;
+        }
+        else {
+            $( "body" ).css( "cursor", "inherit");
+            ba=true;
+        } 
+        
+    });
+    
+    /*---------29---------*/
+    var ca= 0;
+    $("#ca").click(function(){
+        $( "#ca" ).append( "<p class=\"star\" id=" + ca +">&#9733</p>").fadeIn(2000);
+        $( "#" + ca ).css( "top", (Math.random()*100) + "%");
+        $( "#" + ca ).css( "left", (Math.random()*100) + "%");
+        
+        ca++;
     });
 
 });

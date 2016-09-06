@@ -337,14 +337,30 @@
     opacity: .7;
 }
 
+/*---------------16---------------*/
+#p {
+    background-color: #EDEDED;
+    
+}
+
+#cloud {
+    color: #454B52;
+    opacity:1;
+    font-size: 120px;
+    z-index: 2;
+}
+
+#drop {
+    width:50px;
+}
 /*---------------17---------------*/
 #q {
-    background-color: blue;
+    background-color: #589FBA;
     
 }
 
 #lock {
-    background-color: red;
+    background-color: #FF9228;
     z-index: 10;
     display: none;
     
@@ -360,13 +376,13 @@
 
 /*---------------18---------------*/
 #r {
-    background-color: green;
+    background-color: white;
     
 }
 
 #spin {
     width: 200%;
-    background-color: red;
+    background-color: black;
     height: 20px;
     -webkit-transition: all 1000ms ease;
         -moz-transition: all 1000ms ease;
@@ -377,42 +393,126 @@
 
 /*---------------19---------------*/
 #s {
-    background-color: green;
-    
+
+}
+
+#s .full {
+    background-color: #3EBD88;
 }
 
 /*---------------20---------------*/
 #t {
-    background-color: #A3A3A3;
+    background-color: #7A8591;
 }
 #yes {
     font-size: 90px;
     font-weight: bold;
-    color: #B0B0B0;
+    color: #BDCDE0;
     
 }
 
 
 /*---------------21---------------*/
-#s {
-    background-color: green;
-    
-}
-
 #hue {
-    background-color: #E2F059;
+    background-color: #FFC9FF;
 }
 
 #hue2 {
-    background-color: #937EA3;
+    background-color: #FFC9FF;
     top: 33.33%;
     left: 0;
     
 }
 
 #hue3 {
-    background-color: #E2F059;
+    background-color: #1EB1FA;
     top: 66.66%;
     left: 0;
     
+}
+
+/*---------------22---------------*/
+#v {
+    background-color:#EDEDED;
+}
+
+#three {
+    font-size: 200px;
+    opacity: .1;
+    font-weight: bold;
+}
+
+/*---------------23---------------*/
+#w {
+    background-color: #FF4500;
+}
+
+/*---------------24---------------*/
+#x {
+    background-color: green;
+}
+
+/*---------------25---------------*/
+#y {
+    background-color: #FCF4FF;
+}
+
+#erase {
+    color: #FFC9FF;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: .2;
+}
+
+/*---------------26---------------*/
+#z {
+    background-color: blue;
+}
+
+#side {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    left: 0;
+}
+/*---------------27---------------*/
+#aa {
+    background-color: brown;
+}
+
+/*---------------28---------------*/
+#ba {
+    background-color: cyan;
+}
+
+#ba:hover {
+    cursor: inherit;
+}
+
+#quest {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*---------------29---------------*/
+#ca {
+
+    background-color: #454B52;
+    
+}
+ #star {
+    color: #FFEFB3;
+    font-size: 30px;
+ }
+.star {
+    position: fixed;
+    font-size: 15px;
+    
+    color: #FFEFB3;
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
 }
