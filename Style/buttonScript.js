@@ -96,16 +96,16 @@ $(document).ready(function(){
     
     /*---------8---------*/
     var h= true;
-    var x=1;
+    var xxx=1;
     $("#h").click(function(){
         if (x==1) {
-            alert("YOU'VE CLICK THE BIG PINK DOT " + x + " TIME");
-            x++;
+            alert("YOU'VE CLICK THE BIG PINK DOT " + xxx + " TIME");
+            xxx++;
         }
         
         else {
-            alert("YOU'VE CLICK THE BIG PINK DOT " + x + " TIMES");
-            x++;
+            alert("YOU'VE CLICK THE BIG PINK DOT " + xxx + " TIMES");
+            xxx++;
         }
         
     });
@@ -199,8 +199,7 @@ $(document).ready(function(){
     });
     
     /*---------15---------*/
-    $("#o").click(function(){
-            
+    $("#o").click(function(){ 
             var ad = Math.round(Math.random() * 255);
             var bd = Math.round(Math.random() * 255);
             var cd = Math.round(Math.random() * 255);
@@ -212,8 +211,6 @@ $(document).ready(function(){
     $("#p").click(function(){
             $( "#drop" ).css("top", "50%");
             $( "#drop" ).animate({top: "120%"}, 1300);
-            
-            
     });
     
     /*---------17---------*/
@@ -231,9 +228,7 @@ $(document).ready(function(){
 
             q=true;
             
-        }
-   
-            
+        }   
     });
     
     /*---------18---------*/
@@ -318,10 +313,34 @@ $(document).ready(function(){
     
     /*---------23---------*/
     var w= true;
-    $("#w").click(function(){
-
-        $( "#w" ).animate({width:"0%"}, 800);
-
+    $("#w").click(function wart (){
+        if (w==true) {
+            $( "#w" ).animate({width:"0%"}, 1000);
+            $( "#ww" ).animate({width:"33.33%"}, 1000);
+            
+            w=false;
+        }
+        else {
+            $( "#w" ).animate({width:"33.33%"}, 1000);
+            $( "#ww" ).animate({width:"0%"}, 1000);
+            
+            w=true;
+        }   
+    });
+    
+    $("#ww").click(function wart (){
+        if (w==true) {
+            $( "#w" ).animate({width:"0%"}, 1000);
+            $( "#ww" ).animate({width:"33.33%"}, 1000);
+            
+            w=false;
+        }
+        else {
+            $( "#w" ).animate({width:"33.33%"}, 1000);
+            $( "#ww" ).animate({width:"0%"}, 1000);
+            
+            w=true;
+        }   
     });
     
     /*---------24---------*/
@@ -367,10 +386,12 @@ $(document).ready(function(){
     $("#ba").click(function(){
         if (ba==true) {
             $( "body" ).css( "cursor", "help");
+    
             ba=false;
         }
         else {
             $( "body" ).css( "cursor", "inherit");
+
             ba=true;
         } 
         
@@ -385,5 +406,114 @@ $(document).ready(function(){
         
         ca++;
     });
+    
+    /*---------30---------*/
+    var da= true;
+    $("#da").click(function(){
+        if (da==true) {
+            $( "#space" ).css( "letter-spacing", "37px");
+            $( "#space" ).css( "left", "54%");
+    
+            da=false;
+        }
+        else {
+            $( "#space" ).css( "letter-spacing", "-2px");
+            $( "#space" ).css( "left", "50%");
 
+            da=true;
+        } 
+        
+    });
+    
+    /*---------31---------*/
+    var ea= true;
+    $("#ea").click(function(){
+        $( "#follow" ).css( "position", "fixed");
+        $( "#ballGame" ).css( "position", "fixed");
+    
+    });
+
+    $('#follow').click(function() {
+
+                
+                $( "#follow" ).css( "position", "absolute");  
+            
+                $( "#follow" ).css( "left", "50%");
+                $( "#follow" ).css( "top", "50%");
+                $( "#ballGame" ).css( "position", "absolute");
+    });
+    
+
+    
+    /*---------32---------*/
+    var fa= 0;
+    $("#fa").click(function(){
+        if (fa==0) {
+            $( "#green" ).css( "width", "700px");
+            $( "#green" ).css( "height", "700px");
+            $( "#green" ).css( "border-radius", "500px");
+            $( "#gatsby" ).animate({opacity: "1"}, 500); 
+            fa++;
+        }
+        else if (fa==1) {
+            $( "#gatsby" ).html( "the orgastic future that year by year recedes before us.");
+            fa++;
+        }
+        else if (fa==2) {
+            $( "#gatsby" ).html( "It eluded us then, but that's no matter -");
+            fa++;
+        }
+        else if (fa==3) {
+            $( "#gatsby" ).html( "to-morrow we will run faster, stretch out our arms farther. . . . .");
+            fa++;
+        }
+        else if (fa==4) {
+            $( "#gatsby" ).html( "So we beat on, ");
+            fa++;
+        }
+        else if (fa==5) {
+            $( "#gatsby" ).html( "boats against the current,");
+            fa++;
+        }
+        else if (fa==6) {
+            $( "#gatsby" ).html( "borne back ceaselessly into the past.");
+            fa++;
+        }
+        else if (fa==7) {
+            $( "#gatsby" ).animate({opacity: "0"}, 500);
+            fa++;
+        }
+        else if (fa==8) {
+            $( "#gatsby" ).html( "Gatsby believed in the green light");
+            $( "#green" ).delay(1000).css( "width", "50px");
+            $( "#green" ).delay(1000).css( "height", "50px");
+
+            fa=0;
+        }
+        
+    });
+    
+    /*---------33---------*/
+    var ga= true;
+    var ttt;
+    $("#ga").click(function(){
+        if (ga) {
+            ttt=500;
+            ga=false;
+        }else {
+            ttt=0;
+            ga=true;
+        }
+        
+        setInterval(function () { 
+            $("#ga").css("background-color", function () {
+                this.switch = !this.switch
+                return this.switch ? "#90929E" : ""
+            });  
+        }, ttt)
+            
+    });
+    
+    
+    
 });

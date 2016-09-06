@@ -437,7 +437,7 @@
 }
 
 #three {
-    font-size: 200px;
+    font-size: 150px;
     opacity: .1;
     font-weight: bold;
 }
@@ -445,6 +445,12 @@
 /*---------------23---------------*/
 #w {
     background-color: #FF4500;
+}
+
+#ww {
+    width:0;
+    background-color: #FF4500;
+    
 }
 
 /*---------------24---------------*/
@@ -459,9 +465,9 @@
 
 #erase {
     color: #FFC9FF;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
-    opacity: .2;
+    opacity: .4;
 }
 
 /*---------------26---------------*/
@@ -515,4 +521,87 @@
                 -ms-transition: all 1000ms ease;
                 -o-transition: all 1000ms ease;
                 transition: all 1000ms ease;
+}
+
+/*---------------30---------------*/
+#da {
+    
+}
+
+#space {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -2px;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------31---------------*/
+#follow {
+    background-color: red;
+    z-index: 10;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+#ballGame {
+    background-color: blue;
+    z-index: 9;
+}
+
+/*---------------32---------------*/
+#fa {
+    
+}
+
+#gatsby {
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+#green {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-color: #3EBD88;
+    -webkit-transition: all 1500ms ease;
+                -moz-transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                transition: all 1500ms ease;
+    
+}
+
+#horizon {
+    background-color: #03192B;
+    height: 125px;
+    bottom: 0;
+    
+}
+
+/*---------------33---------------*/
+#ga {
+    background-color: #6F749E; 
+        -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                -o-transition: all 500ms ease;
+                transition: all 500ms ease;
+}
 }
