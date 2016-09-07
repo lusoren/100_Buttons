@@ -28,7 +28,6 @@
     text-align: center;
     margin: 0;
     position: absolute;
-    text-transform: uppercase;
     
     top: 50%;
     left: 50%;
@@ -451,20 +450,25 @@
 
 /*---------------23---------------*/
 #w {
-    background-color: #FF4500;
+    background-color: #B3D6FF;
 }
 
 #ww {
     width:0;
-    background-color: #FF4500;
+    background-color: #B3D6FF;
     
 }
 
 /*---------------24---------------*/
 #x {
-    background-color: green;
 }
 
+#ubar {
+    width: 20px;
+    height: 100%;
+    border-radius: 0;
+    background-color: black;
+}
 /*---------------25---------------*/
 #y {
     background-color: #FCF4FF;
@@ -479,7 +483,7 @@
 
 /*---------------26---------------*/
 #z {
-    background-color: blue;
+    background-color: #AEBAD6;
 }
 
 #side {
@@ -491,12 +495,16 @@
 }
 /*---------------27---------------*/
 #aa {
-    background-color: brown;
+    background-color: #BDFF5B;
+    
+}
+#loto {
+    background-color: #719140;
 }
 
 /*---------------28---------------*/
 #ba {
-    background-color: cyan;
+    background-color: #AEBAD6;
 }
 
 #ba:hover {
@@ -504,8 +512,10 @@
 }
 
 #quest {
+    color: white;
     font-size: 50px;
     font-weight: bold;
+    opacity: 0.2;
 }
 
 /*---------------29---------------*/
@@ -520,7 +530,8 @@
  }
 .star {
     position: fixed;
-    font-size: 15px;
+    font-size: 20px;
+    z-index: 9;
     
     color: #FFEFB3;
 }
@@ -545,7 +556,7 @@
 
 /*---------------31---------------*/
 #follow {
-    background-color: red;
+    background-color: #FF9228;
     z-index: 10;
     
     -webkit-transition: all 1000ms ease;
@@ -556,7 +567,7 @@
 }
 
 #ballGame {
-    background-color: blue;
+    background-color: #FFD6AD;
     z-index: 9;
 }
 
@@ -608,11 +619,8 @@
 }
 
 /*---------------34---------------*/
-#ha {
-    border-width: 50px;
-    border-color: black;
-    
-    background-color: #FF0000;
+#ha {    
+    background-color: #1E93E3;
     
     -webkit-transition: all 2000ms ease;
                 -moz-transition: all 2000ms ease;
@@ -633,15 +641,13 @@
                 -o-transition: all 2000ms ease;
                 transition: all 2000ms ease;
     word-break: break-all;
+    color:white;
     
-    color: white;
-    opacity: .4;
 }
 
 /*---------------35---------------*/
 #ia {
-
-    background-color: pink;    
+    background-color: #FFC9FF;    
     
     -webkit-transition: all 2000ms ease;
                 -moz-transition: all 2000ms ease;
@@ -650,7 +656,22 @@
                 transition: all 2000ms ease;
 }
 
-/*---------------37---------------*/
+#ia .circle {
+    background-color: #FCF4FF;
+    border-radius: 0;
+}
+#horz {
+    width: 130px;
+    height: 30px;
+    
+}
+
+#vert {
+    width: 30px;
+    height: 130px;
+}
+
+/*---------------36---------------*/
 #ja {
     background-color: #03192B;    
     -webkit-transition: all 1200ms ease;
@@ -659,6 +680,8 @@
                 -o-transition: all 1500ms ease;
                 transition: all 1200ms ease;
 }
+
+
 
 #land {
     background-color: #0B423C;
@@ -689,17 +712,18 @@
 }
 /*---------------37---------------*/
 #ka {
-    
+    background-color: #1E93E3;
 }
 
 #bdoor {
-    background-color: red;
     bottom: 0;
+    background-color: #FF4500;
 }
 
 #tdoor {
     top: 0;
-    background-color: blue;
+    background-color: #FFE23C;
+
 }
 
 /*---------------38---------------*/
@@ -797,3 +821,85 @@
 
 
 }
+
+/*---------------50---------------*/
+#xa iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.exit {
+    font-size: 30px;
+    opacity: .5;
+}
+
+/*---------------51---------------*/
+#ya {
+    background-color: red;
+}
+
+#ya:hover {
+    background-color: red;
+}
+
+.circle {
+    background-color: black;
+}
+
+#vertt {
+    width:2px;
+    height: 50px;
+}
+
+#horzt {
+    width:50px;
+    height: 2px;
+}
+
+/*---------------52---------------*/
+#za {
+    background-color: blue;
+}
+
+/*---------------53---------------*/
+#ab {
+    background-color: green;
+}
+
+/*---------------54---------------*/
+#bb {
+    background-color: red;
+}
+
+/*---------------55---------------*/
+#cb {
+    background-color: blue;
+}
+
+/*---------------56---------------*/
+#db {
+    background-color: green;
+}
+
+/*---------------57---------------*/
+#eb {
+    background-color: red;
+}
+
+/*---------------58---------------*/
+#fb {
+    background-color: blue;
+}
+
+/*---------------59---------------*/
+#gb {
+    background-color: green;
+}
+
+/*---------------60---------------*/
+#hb {
+    background-color: red;
+}
+

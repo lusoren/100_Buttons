@@ -757,14 +757,12 @@ $(document).ready(function(){
     var rll=70;
     $("#ua").click(function(){ 
         if (ua==true) {
-            
             if (Math.random()>.5) {
                 rll=70;
             }
             else {
                 rll=-70;
             }
-            
             $( "#tilt" ).css("-ms-transform", "skewX(" + rll + "deg)");
             $( "#tilt" ).css("-webkit-transform", "skewX(" + rll + "deg)");
             $( "#tilt" ).css("transform", "skewX(" + rll + "deg)");
@@ -772,7 +770,6 @@ $(document).ready(function(){
             $( "#tilt" ).css( "left", "30%");    
             ua=false;
         }
-        
         else {
             $( "#tilt" ).css("-ms-transform", "skewX(0deg)");
             $( "#tilt" ).css("-webkit-transform", "skewX(0deg)");
@@ -795,5 +792,41 @@ $(document).ready(function(){
             wa=true;
         }    
     });
+    
+    /*---------50---------*/
+    var xa= true;
+    $("#xa").click(function(){
+        if (xa==true) {
+            $( "iframe" ).css( "display", "inherit");
+            $( "#exit" ).html( "X");
+            $( "#exit" ).addClass( "exit");
+        
+            xa=false;
+        }
+        else {
+            $( "iframe" ).css( "display", "none");
+            $( "#exit" ).removeClass( "exit");
+            $( "#exit" ).html( "50");
+            xa=true;
+        }    
+    });
+    
+    /*---------50---------*/
+    var za= true;
+    $("#za").click(function(){
+        if (za==true) {
+            $( "body" ).css( "cursor", "crosshair");
+        
+            xa=false;
+        }
+        else {
+            $( "body" ).css( "cursor", "inherit");
+            
+            xa=true;
+        }    
+    });
+    
+    
+
     
 });
