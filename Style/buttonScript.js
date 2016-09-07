@@ -623,31 +623,12 @@ $(document).ready(function(){
     
     var ma=true;
     $("#ma").click(function(){
-        if (ma==true) {
-           
-            $( ".cell" ).animate({"height":"220"},800);
-            ma=false;
-        }
-        else {
-            $( ".cell" ).animate({"height":"250"},800);
-            ma=false;      
-        }
+        $( ".cell" ).animate({"height":"220"},800);
+        $( ".cell" ).delay(1200).animate({"height":"250"},800);
+        ma=false;
         
     });
-    
-    /*---------40---------*/
-    $("#ma").click(function(){
-        if (ma==true) {
-           
-            $( ".cell" ).animate({"height":"220"},800);
-            ma=false;
-        }
-        else {
-            $( ".cell" ).animate({"height":"250"},800);
-            ma=false;      
-        }
-        
-    });
+
     
     /*var ma=true;
     $("#ma").click(function(){
@@ -664,13 +645,155 @@ $(document).ready(function(){
     });
     */
     
+    /*---------40---------*/
     var na= 0;
     $("#na").click(function(){
-        $( "#na" ).append( "<p class=\"numby\" id=" + "numby" + na +">"+ (Math.round(Math.random() * 10))+ "</p>");
-        $( "#" + na ).css( "top", (Math.random()*100) + "%");
-        $( "#" + na ).css( "left", (Math.random()*100) + "%");
+        $( "#na" ).append( "<p class=\"numby\" id=\"" + "numby" + na +"\">"+ (Math.round(Math.random() * 10))+ "</p>");
+        $( "#numby" + na ).css( "top", (Math.random()*100) + "%");
+        $( "#numby" + na ).css( "left", (Math.random()*100) + "%");
+        $( "#numby" + na ).css( "font-size", (Math.random()*300) + "px");
         
         na++;
+    });
+    
+    /*---------41---------*/
+    var oa= true;
+    $("#oa").click(function(){ 
+        if (oa==true) {
+            $( ".numby").css( "display", "none");
+            oa=false;
+        }
+        else {
+            $( ".numby").css( "display", "inherit");
+            oa=true;      
+        }
+       
+    });
+    
+    /*---------42---------*/
+    var pa= true;
+    $("#pa").click(function(){ 
+        if (pa==true) {
+            $( "#4twen").html( "420");
+            pa=false;
+        }
+        else {
+            $( "#4twen").html( "42");
+            pa=true;  
+        }
+       
+    });
+    
+    /*---------43---------*/
+    var qa= true;
+    $("#qa").click(function(){ 
+        if (qa==true) {
+            $( "#erection").css( "height", "2000px");
+            qa=false;
+        }
+        else {
+            $( "#erection").css( "height", "50%");
+            qa=true;      
+        }
+       
+    });
+    
+    /*---------44---------*/
+    var ra= true;
+    $("#ra").click(function(){
+        if (ra==true) {
+
+            $( "body" ).css( "-webkit-filter", "grayscale(100%)");
+            $( "body" ).css( "filter", "grayscale(100%)");
+            
+            
+            ra=false;
+        }
+        else {
+            $( "body" ).css( "-webkit-filter", "grayscale(0%)");
+            $( "body" ).css( "filter", "grayscale(0%)");
+            
+            ra=true;
+        }    
+    });
+    
+    /*---------45---------*/
+    var sa= true;
+    $("#sa").click(function(){ 
+        if (sa==true) {
+            $( "#rect" ).css( "-webkit-transform", "rotate(135deg)");
+            $( "#rect" ).css( "-ms-transform", "rotate(135deg)");
+            $( "#rect" ).css( "transform", "rotate(135deg)");
+            $( "#rect" ).css( "top", "30%");
+            $( "#rect" ).css( "left", "40%");    
+            sa=false;
+        }
+        else {
+            $( "#rect" ).css( "-webkit-transform", "rotate(0deg)");
+            $( "#rect" ).css( "-ms-transform", "rotate(0deg)");
+            $( "#rect" ).css( "transform", "rotate(0deg)");
+        
+            sa=true;      
+        }
+    });
+    
+    /*---------46---------*/
+    var ta= true;
+    $("#ta").click(function(){ 
+        if (ta==true) {
+            $( "#pass1" ).animate({"width":"230%"}, 1200);
+            $( "#pass2" ).delay( 1200 ).animate({"width":"140%"}, 1000);
+            ta=false;
+        }
+        else {
+            $( "#pass2" ).animate({"width":"0%"}, 1000);
+            $( "#pass1" ).delay( 1200 ).animate({"width":"0%"}, 1200);
+            ta=true;      
+        }
+    });
+    
+    /*---------47---------*/
+    var ua= true;
+    var rll=70;
+    $("#ua").click(function(){ 
+        if (ua==true) {
+            
+            if (Math.random()>.5) {
+                rll=70;
+            }
+            else {
+                rll=-70;
+            }
+            
+            $( "#tilt" ).css("-ms-transform", "skewX(" + rll + "deg)");
+            $( "#tilt" ).css("-webkit-transform", "skewX(" + rll + "deg)");
+            $( "#tilt" ).css("transform", "skewX(" + rll + "deg)");
+            $( "#tilt" ).css( "top", "10%");
+            $( "#tilt" ).css( "left", "30%");    
+            ua=false;
+        }
+        
+        else {
+            $( "#tilt" ).css("-ms-transform", "skewX(0deg)");
+            $( "#tilt" ).css("-webkit-transform", "skewX(0deg)");
+            $( "#tilt" ).css("transform", "skewX(0deg)");
+            ua=true;      
+        }
+    });
+    
+    /*---------49---------*/
+    var wa= true;
+    $("#wa").click(function(){
+        if (wa==true) {
+            $( "#font" ).css( "font-family", "sans-serif");
+        
+            wa=false;
+        }
+        else {
+            $( "#font" ).css( "font-family", "Helvetica");
+            
+            wa=true;
+        }    
     });
     
 });
