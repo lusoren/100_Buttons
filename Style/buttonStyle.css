@@ -34,6 +34,23 @@
     font-family: 'Helvetica', sans-serif;
 }
 
+.third {
+    height: 33.33%;
+    width: 100%;
+    position: absolute;
+    
+    width:100%;
+}
+
+.half {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    
+    width:100%;
+}
+
+
 /*---------------1---------------*/
 #a {
     background-color: #FFC9FF;
@@ -116,14 +133,6 @@
 }
 
 /*---------------7---------------*/
-.third {
-    height: 33.33%;
-    width: 100%;
-    position: absolute;
-    
-    width:100%;
-}
-
 #top {
     top: 0;
     left: 0;
@@ -376,8 +385,7 @@
 
 /*---------------18---------------*/
 #r {
-    background-color: white;
-    
+    background-color: white; 
 }
 
 #spin {
@@ -392,9 +400,7 @@
 }
 
 /*---------------19---------------*/
-#s {
 
-}
 
 #s .full {
     background-color: #3EBD88;
@@ -407,10 +413,8 @@
 #yes {
     font-size: 90px;
     font-weight: bold;
-    color: #BDCDE0;
-    
+    color: #BDCDE0;   
 }
-
 
 /*---------------21---------------*/
 #hue {
@@ -604,4 +608,127 @@
                 -o-transition: all 500ms ease;
                 transition: all 500ms ease;
 }
+
+/*---------------34---------------*/
+#ha {
+    border-width: 50px;
+    border-color: black;
+    
+    background-color: #FF0000;
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
 }
+
+#yess {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 90%;
+    max-height: 400px;
+    margin: 0;
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+    word-break: break-all;
+    
+    color: white;
+    opacity: .4;
+}
+
+/*---------------35---------------*/
+#ia {
+
+    background-color: pink;    
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+
+/*---------------37---------------*/
+#ja {
+    background-color: #03192B;    
+    -webkit-transition: all 1200ms ease;
+                -moz-transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                transition: all 1200ms ease;
+}
+
+#land {
+    background-color: #0B423C;
+    width: 800px;
+    height: 800px;
+    border-radius: 400px;
+    z-index: 2;
+    top: 210%;
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+
+#sun {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    top: 100%;
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+/*---------------37---------------*/
+#ka {
+    
+}
+
+#bdoor {
+    background-color: red;
+    bottom: 0;
+}
+
+#tdoor {
+    top: 0;
+    background-color: blue;
+}
+
+/*---------------38---------------*/
+#fadeR {
+    
+    left:50%;
+    background-color: black;
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+
+/*---------------40---------------*/
+.numby {
+    position: fixed;
+    font-size: 30px;
+    color: black;
+}
+/*---------------40---------------*/
+
+/*---------------41---------------*/
+
+/*---------------42---------------*/
+
+/*---------------43---------------*/
+
+/*---------------44---------------*/
