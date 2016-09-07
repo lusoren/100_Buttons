@@ -629,22 +629,6 @@
                 transition: all 2000ms ease;
 }
 
-#yess {
-    font-size: 20px;
-    font-weight: bold;
-    max-width: 90%;
-    max-height: 400px;
-    margin: 0;
-    -webkit-transition: all 2000ms ease;
-                -moz-transition: all 2000ms ease;
-                -ms-transition: all 2000ms ease;
-                -o-transition: all 2000ms ease;
-                transition: all 2000ms ease;
-    word-break: break-all;
-    color:white;
-    
-}
-
 /*---------------35---------------*/
 #ia {
     background-color: #FFC9FF;    
@@ -841,7 +825,7 @@
 }
 
 #ya:hover {
-    background-color: red;
+    cursor: inherit;
 }
 
 .circle {
@@ -863,9 +847,30 @@
     background-color: blue;
 }
 
+.red {
+    color:white;
+}
 /*---------------53---------------*/
 #ab {
     background-color: green;
+}
+
+
+#yess {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 80%;
+    max-height: 400px;
+    margin: 0;
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+    word-break: break-all;
+    color:white;
+    
+    
 }
 
 /*---------------54---------------*/
