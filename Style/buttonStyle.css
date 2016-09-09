@@ -22,8 +22,6 @@
     transform: translate(-50%, -50%);
 }
 
-
-
 .centralT {
     text-align: center;
     margin: 0;
@@ -41,7 +39,6 @@
     width: 100%;
     position: absolute;
     
-    width:100%;
 }
 
 .half {
@@ -49,7 +46,6 @@
     width: 100%;
     position: absolute;
     
-    width:100%;
 }
 
 
@@ -642,7 +638,8 @@
 
 #ia .circle {
     background-color: #FCF4FF;
-    border-radius: 0;
+    border-radius: 15px;
+    
 }
 #horz {
     width: 130px;
@@ -775,8 +772,9 @@
 /*---------------46---------------*/
 #pass1 {
     background-color: red;
-    width:0%;
-    left: 0%; 
+    width:100%;
+    left: 0%;
+    border-radius: 0;
 }
 
 /*---------------48---------------*/
@@ -784,6 +782,7 @@
     background-color: red;
     width:0%;
     left: 0%;
+    border-radius: 0;
 
 }
 
@@ -869,28 +868,57 @@
                 transition: all 2000ms ease;
     word-break: break-all;
     color:white;
-    
-    
 }
 
 /*---------------54---------------*/
 #bb {
     background-color: red;
 }
-
 /*---------------55---------------*/
 #cb {
     background-color: blue;
 }
 
+#halfer {
+    background-color: red;
+    width:33.33%;
+    right: 0;
+    left: inherit;
+    
+}
 /*---------------56---------------*/
 #db {
     background-color: green;
+    
+}
+
+#halfd {
+    background-color: pink;
+    
+    width:100%;
+    right: 0;
+    left: inherit;
 }
 
 /*---------------57---------------*/
 #eb {
     background-color: red;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+.drop {
+    -webkit-box-shadow: 20px 20px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 20px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 20px 20px 0px 0px rgba(0,0,0,0.75);
+    
+    -webkit-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 40px 40px 0px 0px rgba(0,0,0,0.75);
 }
 
 /*---------------58---------------*/
