@@ -22,6 +22,20 @@
     transform: translate(-50%, -50%);
 }
 
+.square {
+    width:100px;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    
+    outline: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .centralT {
     text-align: center;
     margin: 0;
@@ -638,7 +652,7 @@
 
 #ia .circle {
     background-color: #FCF4FF;
-    border-radius: 15px;
+    border-radius: 0;
     
 }
 #horz {
@@ -815,7 +829,8 @@
 
 .exit {
     font-size: 30px;
-    opacity: .5;
+    left: inherit;
+    right: 30px;
 }
 
 /*---------------51---------------*/
@@ -887,21 +902,28 @@
     
 }
 /*---------------56---------------*/
-#db {
-    background-color: green;
-    
-}
-
 #halfd {
-    background-color: pink;
-    
+    background-color: #FFC9FF;
+    height: 50%;
     width:100%;
     right: 0;
     left: inherit;
 }
 
+#halfdd {
+    background-color: #1EB1FA;
+    height: 50%;
+    
+    width:100%;
+    right: 0;
+    left: inherit;
+    bottom: 0;
+    top: inherit;
+}
+
 /*---------------57---------------*/
 #eb {
+    z-index: 3;
     background-color: red;
     
     -webkit-transition: all 1000ms ease;
@@ -912,13 +934,9 @@
 }
 
 .drop {
-    -webkit-box-shadow: 20px 20px 0px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 20px 20px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: 20px 20px 0px 0px rgba(0,0,0,0.75);
-    
-    -webkit-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: 40px 40px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 125px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 125px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 125px 0px 0px rgba(0,0,0,0.75);
 }
 
 /*---------------58---------------*/
@@ -931,8 +949,165 @@
     background-color: green;
 }
 
+#fullMoon {
+    background-color: black;
+}
+
 /*---------------60---------------*/
 #hb {
     background-color: red;
 }
+
+/*---------------61---------------*/
+#ib {
+    background-color: purple;
+}
+
+/*---------------62---------------*/
+#jb {
+    background-color: pink;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid blue;
+}
+
+#squr {
+	background-color: blue;
+    display: none;
+    
+}
+
+/*---------------63---------------*/
+#kb {
+    background-color: white;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+/*---------------64---------------*/
+#lb {
+    background-color: black;
+}
+
+#errect {
+    background-color: white;
+    top: inherit;
+    height: 100%;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+#errect:active {
+    height: 0;
+}
+
+/*---------------65---------------*/
+#mb {
+    background-color: red;
+}
+
+#skew {
+    background-color: black;
+    
+    -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+}
+
+.skewd {
+    -ms-transform: skewX(50deg); /* IE 9 */
+    -webkit-transform: skewX(50deg); /* Safari */
+    transform: skewX(50deg);
+    
+    top: 30%;
+    left: 40%;
+
+}
+
+/*---------------66---------------*/
+#strch {
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+}
+
+.wrek {
+    -ms-transform: scale(1,6); /* IE 9 */
+    -webkit-transform: scale(1,6); /* Safari */
+    transform: scale(1,6); /* Standard syntax */
+    
+    font-size: 50px;
+    
+    left: 0%;
+}
+
+/*---------------67---------------*/
+#ob {
+    background-color: purple;
+}
+
+#toggle {
+    background-color: white;
+}
+
+.none {
+    opacity: 0;
+}
+
+/*---------------68---------------*/
+#pb {
+    background-color: purple;
+}
+
+#toggle2 {
+    background-color: white;
+}
+
+/*---------------69---------------*/
+#qb {
+    background-color: gray;
+}
+
+.blur {
+    -webkit-filter: saturate(800%); /* Chrome, Safari, Opera */
+    filter: saturate(800%);
+
+}
+
+/*---------------70---------------*/
+#rb {
+
+}
+
+#add {
+    width: 50px;
+    height: 50px;
+    
+    background-color: red;
+    
+}
+
+/*---------------71---------------*/
+#sb .circle {
+    background-color: pink;
+
+}
+
 
