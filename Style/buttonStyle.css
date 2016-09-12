@@ -543,6 +543,8 @@
     color: #FFEFB3;
 }
 
+
+
 /*---------------30---------------*/
 #da {
     
@@ -654,12 +656,12 @@
 }
 #horz {
     width: 130px;
-    height: 30px;
+    height: 25px;
     
 }
 
 #vert {
-    width: 30px;
+    width: 25px;
     height: 130px;
 }
 
@@ -748,7 +750,7 @@
 /*---------------43---------------*/
 #qa {
     overflow: visible;
-    z-index: 5
+    z-index: 5;
 }
 
 #erection {
@@ -1201,8 +1203,22 @@ marquee::selection {display: none}
 /*---------------78---------------*/
 
 /*---------------79---------------*/
+#ac .circle {
+    opacity: .5;
+}
+
 #bounce {
     top: 80%;
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+}
+
+#bounce1 {
+    top: 20%;
     
     -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
@@ -1245,11 +1261,82 @@ marquee::selection {display: none}
     cursor: inherit;
 }
 
-/*---------------82---------------*/
+/*---------------83---------------*/
+.circled {
+    width:100px;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    
+    border-radius: 50px;
+    
+    outline: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ever {
+    background-color: cyan;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
 .every {
     width: 100px;
     height: 100px;
     background-color: cyan;
+    
+    z-index: 6;
+}
+
+/*---------------84---------------*/
+.ban {
+    width:100%;
+    height: 25px;
 
 }
 
+/*---------------85---------------*/
+#gc{
+    overflow: visible;
+    z-index: 5;
+}
+#breach {
+    background-color: red;
+    width: 50%;
+   
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;   
+}
+
+/*---------------86---------------*/
+#timesTwo {
+    font-family:  sans-serif;
+    font-size: 40px;
+    
+    font-weight: bold;
+    
+}
+
+/*---------------89---------------*/
+.raid {
+    background-color: pink;
+    width: 50%;
+    z-index: 15;
+    
+}
+
+/*---------------90---------------*/
+#lc {
+    min-width: 300px;
+    background-color: purple;
+    
+}

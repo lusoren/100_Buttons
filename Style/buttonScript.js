@@ -404,6 +404,12 @@ $(document).ready(function(){
         ca++;
     });
     
+    $("#star").click(function(){
+        $( ".star").remove();
+        
+        ca++;
+    });
+    
     /*---------30---------*/
     var da= true;
     $("#da").click(function(){
@@ -1241,15 +1247,24 @@ $(document).ready(function(){
     });
     
     /*---------79---------*/
-    var ac= 60;
+    var ac= true;
+
     $("#ac").click(function(){
-        $( "#bounce" ).css("top",ac+"%");
-        
-        if (ac>20) {
-            ac=ac-20;
+        if (ac==true) {
+            $( "#bounce" ).css("top","25%");
+            $( "#bounce" ).css("background-color","red");
+            $( "#bounce1" ).css("top","75%");
+            $( "#bounce1" ).css("background-color","blue");
+            
+            ac=false;
         }
         else {
-            ac=80;
+            $( "#bounce" ).css("top","75%");
+            $( "#bounce" ).css("background-color","blue");
+            $( "#bounce1" ).css("top","25%");
+            $( "#bounce1" ).css("background-color","red");
+            
+            ac=true;
         }
     });
     
@@ -1278,7 +1293,7 @@ $(document).ready(function(){
         cc++;
     });
     
-    /*---------81---------*/
+    /*---------82---------*/
     var dc= 0;
     var dcc=true;
     $("#dc").click(function(){
@@ -1312,11 +1327,11 @@ $(document).ready(function(){
         }
     }
     
-    /*---------81---------*/
+    /*---------83---------*/
     var ec= true;
     $("#ec").click(function(){
         if (ec==true) {
-            $( ".cell" ).append( "<div class=\"circle every\"></div>");
+            $( ".cell" ).append( "<div class=\"circled every\"></div>");
             ec=false;
         }
         else {
@@ -1325,6 +1340,88 @@ $(document).ready(function(){
         }    
     });
     
+    /*---------84---------*/
+    var fc= 0;
+    var fcc= 0;
+    $("#fc").click(function(){
+        $( "#broke" ).html( "fuck you...");
+        
+    });
+    
+    /*---------85---------*/
+    var gc= true;
+    $("#gc").click(function(){
+        
+        if (gc==true) {
+            $( "#breach" ).css( "width", "200%" );
+            gc=false;
+        }
+        else {
+            $( "#breach" ).css( "width", "50%" );
+            gc=true;
+        }    
+        
+    });
 
-      
+    /*---------86---------*/
+    var hc= 2;
+    $("#hc").click(function(){
+        hc=hc*2;
+        $("#timesTwo").html(hc);
+        
+    });
+    
+    /*---------87---------*/
+    var ic= 2;
+    $("#ic").click(function(){
+        window.print();
+        
+    });
+    
+    /*---------88---------*/
+    var jc= 2;
+    $("#jc").click(function(){
+        window.open();
+        
+    });
+    
+    /*---------89---------*/
+    var kc= true;
+    $("#kc").click(function(){
+        if (kc==true) {
+            $( ".cell" ).append( "<div class=\"full raid\"></div>");
+            kc=false;
+        }
+        else {
+            $( ".raid" ).remove();
+            kc=true;
+        }    
+    });
+    
+    /*---------90---------*/
+    var lc= true;
+    $("#lc").click(function(){
+        if (lc==true) {
+            $( "body" ).animate({"max-width":"300px"},600);
+            lc=false;
+        }
+        else {
+            $( "body" ).animate({"max-width":"2200px"},600);
+            lc=true;
+        }    
+    });
+    
+    /*---------91---------*/
+    var lc= true;
+    $("#lc").click(function(){
+        if (lc==true) {
+            $( "body" ).animate({"max-width":"300px"},600);
+            lc=false;
+        }
+        else {
+            $( "body" ).animate({"max-width":"2200px"},600);
+            lc=true;
+        }    
+    });
+    
 });
