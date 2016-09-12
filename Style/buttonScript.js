@@ -1412,16 +1412,33 @@ $(document).ready(function(){
     });
     
     /*---------91---------*/
-    var lc= true;
-    $("#lc").click(function(){
-        if (lc==true) {
-            $( "body" ).animate({"max-width":"300px"},600);
-            lc=false;
-        }
-        else {
-            $( "body" ).animate({"max-width":"2200px"},600);
-            lc=true;
-        }    
+
+    $(".dott").click(function(){
+        var id = $(this).attr('id');
+        $( '.dott').css( "background-color", "blue" );
+  
     });
+    
+    /*---------92---------*/
+
+    $("#nc").click(function(){
+        var person = prompt("Please enter your name", "Hanahan");
+        $( '#screenX').html( person + "'s button <3" );
+  
+    });
+    
+    /*---------93---------*/
+    $("#oc").click(function(){
+        $( this ).delay(6000).animate({"width":"000px"},600);
+    });
+    
+    /*---------93---------*/
+    $("#vc").click(function(){
+        while (true) {
+            
+        }
+    });
+    
+
     
 });
