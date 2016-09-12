@@ -268,11 +268,8 @@
     display: inline-block;
     margin-right: 80px;
     cursor: pointer;  
-
 }
     
-    
-
 #matrix {
     opacity: 0;
 }
@@ -1110,4 +1107,149 @@
 
 }
 
+/*---------------72---------------*/
+#tb {
+    background-color: red;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+#addd {
+    background-color: pink;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+
+}
+
+/*---------------73---------------*/
+#ub {
+    background-color: pink;
+    
+}
+
+.centering2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: none;
+}
+
+.dot {
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin: 0;
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+}
+
+.marginal {
+    margin: 30px 0;
+}
+
+/*---------------74---------------*/
+.collapd {
+    height:70px;
+    width: 70px;
+}
+
+/*---------------74---------------*/
+.swtch {
+    margin-left: 100px;
+}
+
+/*---------------75---------------*/
+.swtchr {
+    margin-right: 100px;
+}
+
+/*---------------76---------------*/
+.moveIt {
+    font-size: 20px;
+    font-family: Helevetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    
+}
+
+marquee::selection {display: none}
+.moveIt::selection {display: none}
+
+/*---------------77---------------*/
+#yb .moveIt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    speed: 200;
+}
+/*---------------78---------------*/
+
+/*---------------79---------------*/
+#bounce {
+    top: 80%;
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+}
+
+/*---------------80---------------*/
+#drug {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#drug p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    
+    color: white;
+    opacity: .4;
+}
+
+#drug:hover {
+    cursor: move;  
+}
+
+#bc:hover {
+    cursor: inherit;
+}
+
+/*---------------82---------------*/
+.every {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+
+}
 

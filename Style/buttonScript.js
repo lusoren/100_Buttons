@@ -391,8 +391,7 @@ $(document).ready(function(){
             $( "body" ).css( "cursor", "inherit");
 
             ba=true;
-        } 
-        
+        }  
     });
     
     /*---------29---------*/
@@ -427,7 +426,6 @@ $(document).ready(function(){
     var ea= true;
     $("#ea").click(function(){
         if (ea==true) {
-      
             $( "#follow" ).css( "position", "fixed");
             $( "#ballGame" ).css( "position", "fixed");
             ea=false;
@@ -706,10 +704,8 @@ $(document).ready(function(){
     var ra= true;
     $("#ra").click(function(){
         if (ra==true) {
-
             $( "body" ).css( "-webkit-filter", "grayscale(100%)");
             $( "body" ).css( "filter", "grayscale(100%)");
-            
             
             ra=false;
         }
@@ -1146,6 +1142,189 @@ $(document).ready(function(){
         
         sb++;
     });
-
     
+    /*---------72---------*/
+    var tb= 0;
+    $("#tb").click(function(){
+
+        $( "#addd" ).css( "top", (Math.random()*100) + "%");
+        $( "#addd" ).css( "left", (Math.random()*100) + "%");
+        
+        rb++;
+        
+        if (tb%2==1) {
+            $( "#addd" ).css( "background-color", "red");
+            $( "#tb" ).css( "background-color", "blue");
+        }
+        else {
+            $( "#addd" ).css( "background-color", "blue");
+            $( "#tb" ).css( "background-color", "red");
+        }
+        
+        tb++;
+    });
+    
+    
+    /*---------73---------*/
+    var ub=true;
+    $("#ub").click(function(){
+        if (ub==true) {
+            $( ".dot" ).addClass("marginal");
+    
+               
+            ub=false;
+        }
+        else {
+            $( ".dot" ).removeClass("marginal");
+
+            ub=true;
+        }    
+    });
+    
+    /*---------74---------*/
+    var vb=true;
+    $("#vb").click(function(){
+        if (vb==true) {
+            $( ".dot" ).addClass("collapd");
+    
+               
+            vb=false;
+        }
+        else {
+            $( ".dot" ).removeClass("collapd");
+
+            vb=true;
+        }    
+    });
+    
+    /*---------75---------*/
+    var wb=true;
+    $("#wb").click(function(){
+         if (wb==true) {
+            $( ".tt" ).addClass("swtch");
+            $( ".t" ).addClass("swtchr");
+    
+               
+            wb=false;
+        }
+        else {
+            $( ".tt" ).removeClass("swtch");
+            $( ".t" ).removeClass("swtchr");
+            wb=true;
+        }    
+    });
+    
+    /*---------76---------*/
+    var xb= 0;
+    $("#xb").click(function(){
+        $( this ).append( "<marquee class=\"moveIt\" id=\"marq" + xb +"\">move</marquee>");
+        xb++;
+      
+    });
+    
+    /*---------77---------*/
+    var yb= 0;
+    $("#yb").click(function(){
+        $( this ).append( "<marquee class=\"moveIt\" id=\"marq" + yb +"\">I</marquee>");
+        yb++;
+      
+    });
+    
+    /*---------78---------*/
+    $("#zb").click(function(){
+        $( "#vibr" ).delay(0).animate({"left":"51%"},10);
+        $( "#vibr" ).delay(20).animate({"left":"49%"},10);
+        $( "#vibr" ).delay(30).animate({"left":"51%"},10);
+        $( "#vibr" ).delay(40).animate({"left":"49%"},10);
+        $( "#vibr" ).delay(50).animate({"left":"50%"},10);
+
+    });
+    
+    /*---------79---------*/
+    var ac= 60;
+    $("#ac").click(function(){
+        $( "#bounce" ).css("top",ac+"%");
+        
+        if (ac>20) {
+            ac=ac-20;
+        }
+        else {
+            ac=80;
+        }
+    });
+    
+    /*---------80---------*/
+    var bc= 80;
+    $(function(){
+        $( "#drug" ).draggable();
+    });
+    
+    /*---------81---------*/
+    var cc= 0;
+    $("#cc").click(function(){
+        $( "#cc" ).append( "<div class=\"circle\" id=\"trip" + cc +"\"></div>");
+        $( "#trip" + cc ).css( "width", 120 + (cc*20) + "px");
+        $( "#trip" + cc ).css( "height", 120 + (cc*20) + "px");
+        $( "#trip" + cc ).css( "z-index", "-" + cc -1);
+        $( "#trip" + cc ).css( "border-radius", 120 + (cc*20));
+        
+        if (cc%2==1) {
+            $( "#trip" + cc ).css( "background-color", "black");
+        }
+        else {
+            $( "#trip" + cc ).css( "background-color", "gray");
+        }
+        
+        cc++;
+    });
+    
+    /*---------81---------*/
+    var dc= 0;
+    var dcc=true;
+    $("#dc").click(function(){
+        dc=0;
+        if (dcc==true) {
+            while (dc<26) {
+                create();
+                dc++;
+            }  
+            dcc=false;
+        }
+        else {
+            $( "#dc" ).html( "<p class=\"num\">82</p>");
+            dcc=true;
+        }    
+    });
+    
+    function create() {
+        $( "#dc" ) .append( "<div class=\"circle\" id=\"tripp" + dc +"\"></div>");
+        $( "#tripp" + dc ).css( "width", 100 + (dc*20) + "px");
+        $( "#tripp" + dc ).css( "height", 100 + (dc*20) + "px");
+        $( "#tripp" + dc ).css( "z-index", "-" + dc -1);
+        $( "#tripp" + dc ).css( "border-radius", 120 + (dc*20));
+        
+
+        if (dc%2==0) {
+            $( "#tripp" + dc ).css( "background-color", "black");
+        }
+        else {
+            $( "#tripp" + dc ).css( "background-color", "gray");
+        }
+    }
+    
+    /*---------81---------*/
+    var ec= true;
+    $("#ec").click(function(){
+        if (ec==true) {
+            $( ".cell" ).append( "<div class=\"circle every\"></div>");
+            ec=false;
+        }
+        else {
+            $( ".every" ).remove();
+            ec=true;
+        }    
+    });
+    
+
+      
 });
