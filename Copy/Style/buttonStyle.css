@@ -1,0 +1,1368 @@
+.full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.circle {
+    width:100px;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    
+    border-radius: 50px;
+    
+    outline: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square {
+    width:100px;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    
+    outline: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centralT {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+.third {
+    height: 33.33%;
+    width: 100%;
+    position: absolute;
+    
+}
+
+.half {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    
+}
+
+
+/*---------------1---------------*/
+#a {
+    background-color: #FFC9FF;
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------2---------------*/
+#b {
+    background-color: #589FBA;
+    -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                -o-transition: all 500ms ease;
+                transition: all 500ms ease;
+}
+
+#b:active {
+    background-color: #FF9228;
+}
+
+/*---------------3---------------*/
+#c .circle {
+    background-color: black;
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------4---------------*/
+#d .circle {
+    
+    width:150px;
+    height:150px;
+    border-radius: 0;
+
+    background-color: black;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------5---------------*/
+#e {
+    background-color: #719140;
+}
+
+#e .circle {
+    width:300px;
+    height:100px;
+    border-radius: 100px;
+    max-width: 80%;
+
+    background-color: #BDFF5B;
+    
+    -webkit-transition: all 1000ms ease-in;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------6---------------*/
+#f {
+    background-color: #FFEFB3;
+}
+
+
+
+#f .full {
+    background-color:#AEBAD6;
+}
+
+/*---------------7---------------*/
+#top {
+    top: 0;
+    left: 0;
+    background-color: #FFE23C;
+    
+    width: 0%;
+}
+
+#mid {
+    top: 33.33%;
+    left: 0;
+    background-color: #FF4500;
+    
+    width: 0%;
+}
+
+#bot {
+    top: 66.66%;
+    left: 0;
+    background-color: #1E93E3;
+    
+    width: 0%;
+}
+
+#topl {
+    top: 0;
+    left: 0;
+    background-color: #1E93E3;
+    
+    width:100%;
+    z-index: -1;
+}
+
+#midl {
+    top: 33.33%;
+    left: 0;
+    background-color: #FFE23C;
+    
+    width:100%;
+    z-index: -1;
+}
+
+#botl {
+    top: 66.66%;
+    left: 0;
+    background-color: #FF4500;
+    
+    width:100%;
+    z-index: -1;
+}
+
+/*---------------8---------------*/
+#h {
+    
+}
+
+#h .circle {
+    background-color: #FCF4FF;
+    height: 350px;
+    width: 350px;
+    
+    border-radius: 175px;
+
+}
+
+/*---------------9---------------*/
+#i {
+    background-color: black;
+    background-size: 120%;
+    background-position: center;
+    
+    
+}
+
+#i .num {
+    
+}
+
+#halfWhite {
+        width: 50%;
+        background-color: white;
+    }
+    
+/*---------------10---------------*/
+#counter {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+/*---------------11---------------*/
+#k {
+    background-color: #EDEDED;
+    cursor: auto;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#red {
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+    background-color:  #FF4500;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+}
+
+#blue {
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #1E93E3;
+    display: inline-block;
+    margin-right: 80px;
+    cursor: pointer;  
+}
+    
+#matrix {
+    opacity: 0;
+}
+
+#notMatrix {
+    opacity: 0;
+}
+
+/*---------------12---------------*/
+#l {
+    background-color: #FFD6AD;
+    cursor: auto;
+}
+
+#l .circle {
+    background-color: #FF9228;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                transition: all 1500ms ease;   
+}
+
+#l .circle:hover {
+    cursor:pointer;
+}
+
+#l .circle:active {
+    width: 700px;
+    border-radius: 350px;
+    height: 700px;
+}
+
+/*---------------13---------------*/
+#m {
+    background-color: #454B52;
+}
+
+#m .num {
+    color: white;
+}
+
+#moon {
+    background-color: #FFEFB3; 
+}
+
+#cut {
+    background-color: #454B52;
+    z-index: 1;
+    top: 42%;
+    left: 45%;
+}
+
+/*---------------14---------------*/
+#n {
+    background-color: #AEBAD6;
+    overflow: inherit;
+    
+}
+
+#n .num {
+    z-index: 5;
+}
+
+#n .circle {
+    z-index: 4;
+    border-radius: 0;
+    background-color: #7D8DB2;
+}
+
+/*---------------15---------------*/
+#0 {
+    background-color: white;
+    
+}
+
+#white {
+    background-color: white;
+    opacity: .7;
+}
+
+/*---------------16---------------*/
+#p {
+    background-color: #EDEDED;
+    
+}
+
+#cloud {
+    color: #454B52;
+    opacity:1;
+    font-size: 120px;
+    z-index: 2;
+}
+
+#drop {
+    width:50px;
+}
+/*---------------17---------------*/
+#q {
+    background-color: #589FBA;
+    
+}
+
+#lock {
+    background-color: #FF9228;
+    z-index: 10;
+    display: none;
+    
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+/*---------------18---------------*/
+#r {
+    background-color: white; 
+}
+
+#spin {
+    width: 200%;
+    background-color: black;
+    height: 20px;
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+/*---------------19---------------*/
+
+
+#s .full {
+    background-color: #3EBD88;
+}
+
+/*---------------20---------------*/
+#t {
+    background-color: #7A8591;
+}
+#yes {
+    font-size: 90px;
+    font-weight: bold;
+    color: #BDCDE0;   
+}
+
+/*---------------21---------------*/
+#hue {
+    background-color: #FFC9FF;
+}
+
+#hue2 {
+    background-color: #FFC9FF;
+    top: 33.33%;
+    left: 0;
+    
+}
+
+#hue3 {
+    background-color: #1EB1FA;
+    top: 66.66%;
+    left: 0;
+    
+}
+
+/*---------------22---------------*/
+#v {
+    background-color:#EDEDED;
+}
+
+#three {
+    font-size: 150px;
+    opacity: .1;
+    font-weight: bold;
+}
+
+/*---------------23---------------*/
+#w {
+    background-color: #B3D6FF;
+}
+
+#ww {
+    width:0;
+    background-color: #B3D6FF;
+    
+}
+
+/*---------------24---------------*/
+#x {
+}
+
+#ubar {
+    width: 20px;
+    height: 100%;
+    border-radius: 0;
+    background-color: black;
+}
+/*---------------25---------------*/
+#y {
+    background-color: #FCF4FF;
+}
+
+#erase {
+    color: #FFC9FF;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: .4;
+}
+
+/*---------------26---------------*/
+#z {
+    background-color: #AEBAD6;
+}
+
+#side {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    left: 0;
+}
+/*---------------27---------------*/
+#aa {
+    background-color: #BDFF5B;
+    
+}
+#loto {
+    background-color: #719140;
+}
+
+/*---------------28---------------*/
+#ba {
+    background-color: #AEBAD6;
+}
+
+#ba:hover {
+    cursor: inherit;
+}
+
+#quest {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.2;
+}
+
+/*---------------29---------------*/
+#ca {
+
+    background-color: #454B52;
+    
+}
+ #star {
+    color: #FFEFB3;
+    font-size: 30px;
+ }
+.star {
+    position: fixed;
+    font-size: 20px;
+    z-index: 9;
+    
+    color: #FFEFB3;
+}
+
+
+
+/*---------------30---------------*/
+#da {
+    
+}
+
+#space {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -2px;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------31---------------*/
+#follow {
+    background-color: #FF9228;
+    z-index: 10;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+#ballGame {
+    background-color: #FFD6AD;
+    z-index: 9;
+}
+
+/*---------------32---------------*/
+#fa {
+    
+}
+
+#gatsby {
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+#green {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-color: #3EBD88;
+    -webkit-transition: all 1500ms ease;
+                -moz-transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                transition: all 1500ms ease;
+    
+}
+
+#horizon {
+    background-color: #03192B;
+    height: 125px;
+    bottom: 0;
+    
+}
+
+/*---------------33---------------*/
+#ga {
+    background-color: #6F749E; 
+        -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                -o-transition: all 500ms ease;
+                transition: all 500ms ease;
+}
+
+/*---------------34---------------*/
+#ha {    
+    background-color: #1E93E3;
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+
+/*---------------35---------------*/
+#ia {
+    background-color: #FFC9FF;    
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+
+#ia .circle {
+    background-color: #FCF4FF;
+    border-radius: 0;
+    
+}
+#horz {
+    width: 130px;
+    height: 25px;
+    
+}
+
+#vert {
+    width: 25px;
+    height: 130px;
+}
+
+/*---------------36---------------*/
+#ja {
+    background-color: #03192B;    
+    -webkit-transition: all 1200ms ease;
+                -moz-transition: all 1500ms ease;
+                -ms-transition: all 1500ms ease;
+                -o-transition: all 1500ms ease;
+                transition: all 1200ms ease;
+}
+
+
+
+#land {
+    background-color: #0B423C;
+    width: 800px;
+    height: 800px;
+    border-radius: 400px;
+    z-index: 2;
+    top: 210%;
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+
+#sun {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    top: 100%;
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+/*---------------37---------------*/
+#ka {
+    background-color: #1E93E3;
+}
+
+#bdoor {
+    bottom: 0;
+    background-color: #FF4500;
+}
+
+#tdoor {
+    top: 0;
+    background-color: #FFE23C;
+
+}
+
+/*---------------38---------------*/
+#fadeR {
+    left:50%;
+    background-color: black;
+    
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+
+/*---------------40---------------*/
+.numby {
+    position: fixed;
+    font-size: 30px;
+    color: black;
+    z-index: 10;
+
+}
+
+/*---------------41---------------*/
+
+/*---------------41---------------*/
+
+/*---------------42---------------*/
+
+/*---------------43---------------*/
+#qa {
+    overflow: visible;
+    z-index: 5;
+}
+
+#erection {
+    background-color: red;
+    bottom: 0;
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+}
+
+/*---------------44---------------*/
+
+
+/*---------------45---------------*/
+#sa {
+   background-color: red; 
+}
+
+#rect {
+    border-radius: 0;
+    background-color: green;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
+
+/*---------------46---------------*/
+#pass1 {
+    background-color: red;
+    width:100%;
+    left: 0%;
+    border-radius: 0;
+}
+
+/*---------------48---------------*/
+#pass2 {
+    background-color: red;
+    width:0%;
+    left: 0%;
+    border-radius: 0;
+
+}
+
+/*---------------47---------------*/
+#ua {
+    background-color: green;
+}
+#tilt {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+
+
+}
+
+/*---------------50---------------*/
+#xa iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.exit {
+    font-size: 30px;
+    left: inherit;
+    right: 30px;
+}
+
+/*---------------51---------------*/
+#ya {
+    background-color: red;
+}
+
+#ya:hover {
+    cursor: inherit;
+}
+
+.circle {
+    background-color: black;
+}
+
+#vertt {
+    width:2px;
+    height: 50px;
+}
+
+#horzt {
+    width:50px;
+    height: 2px;
+}
+
+/*---------------52---------------*/
+#za {
+    background-color: blue;
+}
+
+.red {
+    color:white;
+}
+/*---------------53---------------*/
+#ab {
+    background-color: green;
+}
+
+
+#yess {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 80%;
+    max-height: 400px;
+    margin: 0;
+    -webkit-transition: all 2000ms ease;
+                -moz-transition: all 2000ms ease;
+                -ms-transition: all 2000ms ease;
+                -o-transition: all 2000ms ease;
+                transition: all 2000ms ease;
+    word-break: break-all;
+    color:white;
+}
+
+/*---------------54---------------*/
+#bb {
+    background-color: red;
+}
+/*---------------55---------------*/
+#cb {
+    background-color: blue;
+}
+
+#halfer {
+    background-color: red;
+    width:33.33%;
+    right: 0;
+    left: inherit;
+    
+}
+/*---------------56---------------*/
+#halfd {
+    background-color: #FFC9FF;
+    height: 50%;
+    width:100%;
+    right: 0;
+    left: inherit;
+}
+
+#halfdd {
+    background-color: #1EB1FA;
+    height: 50%;
+    
+    width:100%;
+    right: 0;
+    left: inherit;
+    bottom: 0;
+    top: inherit;
+}
+
+/*---------------57---------------*/
+#eb {
+    z-index: 3;
+    background-color: red;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+.drop {
+    -webkit-box-shadow: 0px 125px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 125px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 125px 0px 0px rgba(0,0,0,0.75);
+}
+
+/*---------------58---------------*/
+#fb {
+    background-color: blue;
+}
+
+/*---------------59---------------*/
+#gb {
+    background-color: green;
+}
+
+#fullMoon {
+    background-color: black;
+}
+
+/*---------------60---------------*/
+#hb {
+    background-color: red;
+}
+
+/*---------------61---------------*/
+#ib {
+    background-color: purple;
+}
+
+/*---------------62---------------*/
+#jb {
+    background-color: pink;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid blue;
+}
+
+#squr {
+	background-color: blue;
+    display: none;
+    
+}
+
+/*---------------63---------------*/
+#kb {
+    background-color: white;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+/*---------------64---------------*/
+#lb {
+    background-color: black;
+}
+
+#errect {
+    background-color: white;
+    top: inherit;
+    height: 100%;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+#errect:active {
+    height: 0;
+}
+
+/*---------------65---------------*/
+#mb {
+    background-color: red;
+}
+
+#skew {
+    background-color: black;
+    
+    -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+}
+
+.skewd {
+    -ms-transform: skewX(50deg); /* IE 9 */
+    -webkit-transform: skewX(50deg); /* Safari */
+    transform: skewX(50deg);
+    
+    top: 30%;
+    left: 40%;
+
+}
+
+/*---------------66---------------*/
+#strch {
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+}
+
+.wrek {
+    -ms-transform: scale(1,6); /* IE 9 */
+    -webkit-transform: scale(1,6); /* Safari */
+    transform: scale(1,6); /* Standard syntax */
+    
+    font-size: 50px;
+    
+    left: 0%;
+}
+
+/*---------------67---------------*/
+#ob {
+    background-color: purple;
+}
+
+#toggle {
+    background-color: white;
+}
+
+.none {
+    opacity: 0;
+}
+
+/*---------------68---------------*/
+#pb {
+    background-color: purple;
+}
+
+#toggle2 {
+    background-color: white;
+}
+
+/*---------------69---------------*/
+#qb {
+    background-color: gray;
+}
+
+.blur {
+    -webkit-filter: saturate(800%); /* Chrome, Safari, Opera */
+    filter: saturate(800%);
+
+}
+
+/*---------------70---------------*/
+#rb {
+
+}
+
+#add {
+    width: 50px;
+    height: 50px;
+    
+    background-color: red;
+    
+}
+
+/*---------------71---------------*/
+#sb .circle {
+    background-color: pink;
+
+}
+
+/*---------------72---------------*/
+#tb {
+    background-color: red;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+}
+
+#addd {
+    background-color: pink;
+    
+    -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+
+}
+
+/*---------------73---------------*/
+#ub {
+    background-color: pink;
+    
+}
+
+.centering2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: none;
+}
+
+.dot {
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin: 0;
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+}
+
+.marginal {
+    margin: 30px 0;
+}
+
+/*---------------74---------------*/
+.collapd {
+    height:70px;
+    width: 70px;
+}
+
+/*---------------74---------------*/
+.swtch {
+    margin-left: 100px;
+}
+
+/*---------------75---------------*/
+.swtchr {
+    margin-right: 100px;
+}
+
+/*---------------76---------------*/
+.moveIt {
+    font-size: 20px;
+    font-family: Helevetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    
+}
+
+marquee::selection {display: none}
+.moveIt::selection {display: none}
+
+/*---------------77---------------*/
+#yb .moveIt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    speed: 200;
+}
+/*---------------78---------------*/
+
+/*---------------79---------------*/
+#ac .circle {
+    opacity: .5;
+}
+
+#bounce {
+    top: 80%;
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+}
+
+#bounce1 {
+    top: 20%;
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+}
+
+/*---------------80---------------*/
+#drug {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#drug p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    
+    color: white;
+    opacity: .4;
+}
+
+#drug:hover {
+    cursor: move;  
+}
+
+#bc:hover {
+    cursor: inherit;
+}
+
+/*---------------83---------------*/
+.circled {
+    width:100px;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    
+    border-radius: 50px;
+    
+    outline: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ever {
+    background-color: cyan;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.every {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    
+    z-index: 6;
+}
+
+/*---------------84---------------*/
+.ban {
+    width:100%;
+    height: 25px;
+
+}
+
+/*---------------85---------------*/
+#gc{
+    overflow: visible;
+    z-index: 5;
+}
+#breach {
+    background-color: red;
+    width: 50%;
+   
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;   
+}
+
+/*---------------86---------------*/
+#timesTwo {
+    font-family:  sans-serif;
+    font-size: 40px;
+    
+    font-weight: bold;
+    
+}
+
+/*---------------89---------------*/
+.raid {
+    background-color: pink;
+    width: 50%;
+    z-index: 15;
+    
+}
+
+/*---------------90---------------*/
+#lc {
+    min-width: 300px;
+    background-color: purple;
+    
+}
+
+/*---------------91---------------*/
+.dott {
+    margin: 0;
+    float: left;
+    display: inline-block;
+    background-color: red;
+    width: 10%;
+    height: 250px;
+    
+    -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;   
+}
+
+.dott:hover {
+    background-color: blue;
+}
+
+/*---------------92---------------*/
+#vc {
+    background-color: purple;
+    
+}
