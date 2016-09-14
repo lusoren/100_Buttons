@@ -566,8 +566,8 @@
 /*---------------31---------------*/
 #follow {
     background-color: #FF9228;
-    z-index: 10;
     
+    z-index: 9;
     -webkit-transition: all 1000ms ease;
                 -moz-transition: all 1000ms ease;
                 -ms-transition: all 1000ms ease;
@@ -577,11 +577,11 @@
 
 #ballGame {
     background-color: #FFD6AD;
-    z-index: 9;
 }
 
 /*---------------32---------------*/
 #fa {
+    
     
 }
 
@@ -640,7 +640,7 @@
 
 /*---------------35---------------*/
 #ia {
-    background-color: #FFC9FF;    
+    background-color: #FCF4FF;    
     
     -webkit-transition: all 2000ms ease;
                 -moz-transition: all 2000ms ease;
@@ -650,18 +650,19 @@
 }
 
 #ia .circle {
-    background-color: #FCF4FF;
+    background-color:#FFC9FF ;
     border-radius: 0;
+    
     
 }
 #horz {
     width: 130px;
-    height: 25px;
+    height: 20px;
     
 }
 
 #vert {
-    width: 25px;
+    width: 20px;
     height: 130px;
 }
 
@@ -732,29 +733,69 @@
                 transition: all 2000ms ease;
 }
 
+/*---------------39---------------*/
+#ma {
+    background-color:#A3BBFF;
+}
+
+#shrink {
+    background-color: white;
+    height: 20px;
+    width: 100%;
+}
+
 /*---------------40---------------*/
+#na {
+    background-color: #D4D4D4;
+}
+
+#na .centralT {
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #EDEDED;
+}
+
 .numby {
     position: fixed;
     font-size: 30px;
     color: black;
     z-index: 10;
-
 }
 
 /*---------------41---------------*/
+#oa {
+    background-color: #EDEDED;
+}
+#oa .centralT {
+    font-size: 20px;
+    letter-spacing: 10px;
+    width: 100%;
+    word-break: break-all;
+    line-height: 25px;
+    text-justify: inter-word;
+    color: #D4D4D4;
+    
+}
 
-/*---------------41---------------*/
 
 /*---------------42---------------*/
+#4twen {
+    -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+}
 
 /*---------------43---------------*/
 #qa {
     overflow: visible;
     z-index: 5;
+    background-color: #FFEFB3;
 }
 
 #erection {
-    background-color: red;
+    background-color: #AEBAD6;
     bottom: 0;
     -webkit-transition: all 2000ms ease;
                 -moz-transition: all 2000ms ease;
@@ -764,16 +805,23 @@
 }
 
 /*---------------44---------------*/
+#ra {
+    background-color: gray;
+}
 
+#tird {
+    background-color: white;
+    opacity: .2;
+}
 
 /*---------------45---------------*/
 #sa {
-   background-color: red; 
+   background-color: #FFD6AD; 
 }
 
 #rect {
     border-radius: 0;
-    background-color: green;
+    background-color: #FF9228;
     
     -webkit-transition: all 1000ms ease;
                 -moz-transition: all 1000ms ease;
@@ -783,16 +831,24 @@
 }
 
 /*---------------46---------------*/
+#ta {
+    background-color:#1E93E3;
+}
+
 #pass1 {
-    background-color: red;
+    background-color:  #7A8591;
     width:100%;
     left: 0%;
     border-radius: 0;
 }
 
 /*---------------48---------------*/
+#va {
+    background-color: #AEBAD6;
+}
+
 #pass2 {
-    background-color: red;
+    background-color: #1E93E3;
     width:0%;
     left: 0%;
     border-radius: 0;
@@ -801,10 +857,9 @@
 
 /*---------------47---------------*/
 #ua {
-    background-color: green;
 }
 #tilt {
-    background-color: blue;
+    background-color: black;
     width: 200px;
     height: 200px;
     border-radius: 100px;
@@ -1228,6 +1283,10 @@ marquee::selection {display: none}
 }
 
 /*---------------80---------------*/
+#bc {
+    overflow: visible;
+}
+
 #drug {
     width: 100px;
     height: 100px;
@@ -1240,6 +1299,8 @@ marquee::selection {display: none}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    z-index: 8;
 }
 
 #drug p {

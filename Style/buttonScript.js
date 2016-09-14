@@ -255,7 +255,7 @@ $(document).ready(function(){
     $("#s").click(function(){
         if (s==true) {
                 $( "#cover" ).css( 'position', 'fixed');
-                $( "#cover" ).css( 'z-index', '10');
+                $( "#cover" ).css( 'z-index', '12');
             s=false;
         }
         else {
@@ -433,7 +433,9 @@ $(document).ready(function(){
     $("#ea").click(function(){
         if (ea==true) {
             $( "#follow" ).css( "position", "fixed");
+            $( "#follow" ).css( "z-index", "9");
             $( "#ballGame" ).css( "position", "fixed");
+            $( "#ballGame" ).css( "z-index", "8");
             ea=false;
         }
         
@@ -442,9 +444,11 @@ $(document).ready(function(){
     $('#follow').click(function() {
             $( "#ballGame" ).css( "position", "absolute");
             $( "#follow" ).css( "position", "absolute");
+            $( "#follow" ).css( "z-index", "2");
             
             $( "#follow" ).css( "left", "50%");
             $( "#follow" ).css( "top", "50%");
+            $( "#ballGame" ).css( "z-index", "0");
         
     });
     
@@ -522,7 +526,7 @@ $(document).ready(function(){
         setInterval(function () { 
             $("#ga").css("background-color", function () {
                 this.switch = !this.switch
-                return this.switch ? "#90929E" : ""
+                return this.switch ? "#EDEDED" : ""
             });  
         }, ttt)
             
@@ -657,7 +661,7 @@ $(document).ready(function(){
         var rand =(Math.round(Math.random() * 10));
         $( "#na" ).append( "<p class=\"numby\" id=\"" + "numby" + na +"\">"+ rand + "</p>");
         $( "#number" ).append( rand );
-        $( "#numby" + na ).css( "top", (Math.random()*40) + "%");
+        $( "#numby" + na ).css( "top", (Math.random()*100) + "%");
         $( "#numby" + na ).css( "left", (Math.random()*100) + "%");
         $( "#numby" + na ).css( "font-size", (Math.random()*200) + "px");
         
@@ -683,10 +687,14 @@ $(document).ready(function(){
     $("#pa").click(function(){ 
         if (pa==true) {
             $( "#4twen").html( "420");
+            $( "#4twen").css( "font-size","280px");
+            $( "#4twen").css( "color","#3EBD88");
             pa=false;
         }
         else {
             $( "#4twen").html( "42");
+            $( "#4twen").css( "font-size","16px");
+            $( "#4twen").css( "color","black");
             pa=true;  
         }
        
