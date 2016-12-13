@@ -538,7 +538,6 @@ $(document).ready(function(){
         if (ha==true) {
             $( this ).css("width","100%");
             $( this ).css("height","500px");
-            $("#yess").css("font-size", "50px");
             //code
             ha=false;
         }
@@ -556,7 +555,7 @@ $(document).ready(function(){
     /*---------35---------*/
     var ia= true;
     $("#ia").click(function(){
-        window.open("index.html");
+        $("#plus").append("<div class=\"cell\" id=\"iaa\"><p class=\"num\">35</p></div>");
     });
     
     /*---------36---------*/
@@ -756,12 +755,12 @@ $(document).ready(function(){
     $("#ta").click(function(){ 
         if (ta==true) {
             $( "#pass1" ).animate({"width":"230%"}, 1200);
-            $( "#pass2" ).delay( 1200 ).animate({"width":"140%"}, 1000);
+            $( "#pass2" ).delay( 1200 ).animate({"width":"200%"}, 1000);
             ta=false;
         }
         else {
             $( "#pass2" ).animate({"width":"0%"}, 1000);
-            $( "#pass1" ).delay( 1200 ).animate({"width":"100%"}, 1200);
+            $( "#pass1" ).delay( 1200 ).animate({"width":"0%"}, 1200);
             ta=true;      
         }
     });
@@ -770,12 +769,12 @@ $(document).ready(function(){
     $("#va").click(function(){ 
         if (ta==true) {
             $( "#pass1" ).animate({"width":"230%"}, 1200);
-            $( "#pass2" ).delay( 1200 ).animate({"width":"140%"}, 1000);
+            $( "#pass2" ).delay( 1200 ).animate({"width":"200%"}, 1000);
             ta=false;
         }
         else {
             $( "#pass2" ).animate({"width":"0%"}, 1000);
-            $( "#pass1" ).delay( 1200 ).animate({"width":"100%"}, 1200);
+            $( "#pass1" ).delay( 1200 ).animate({"width":"0%"}, 1200);
             ta=true;      
         }
     });
@@ -826,6 +825,7 @@ $(document).ready(function(){
     $("#xa").click(function(){
         if (xa==true) {
             $( "iframe" ).css( "display", "inherit");
+            $( this ).css( "background-color", "white");
             $( "#exit" ).html( "&#9746");
             $( "#exit" ).addClass( "exit");
             $( "#exit" ).addClass( "exit");
@@ -834,6 +834,7 @@ $(document).ready(function(){
         }
         else {
             $( "iframe" ).css( "display", "none");
+            $( this ).css( "background-color", "#FFC9FF");
             $( "#exit" ).removeClass( "exit");
             $( "#exit" ).html( "50");
             xa=true;
@@ -951,12 +952,12 @@ $(document).ready(function(){
     var fb= true;
     $("#fb").click(function(){
         if (fb==true) {
-            $( ".num" ).css("color", "white");
+            $( ".num" ).addClass("white");
 
             fb=false;
         }
         else {
-            $( ".num" ).css("color", "black");
+            $( ".num" ).removeClass("white");
 
             fb=true;
         }    
@@ -986,8 +987,9 @@ $(document).ready(function(){
     /*---------61---------*/
     var ib=true;
     $("#ib").click(function(){
-        $( ".cell" ).animate({"height":"500px"},800);
+        $( ".cell" ).animate({"height":"0px"},800);
         $( ".cell" ).delay(800).animate({"height":"250px"},800);
+        $( "body" ).delay(1600).animate({scrollTop: $("#ib").offset().top}, 2000);
     });
     
     /*---------62---------*/
@@ -1010,7 +1012,7 @@ $(document).ready(function(){
     });
     
     /*---------63---------*/
-    var kb= 0;
+    var kb= 1;
     $("#kb").click(function(){
         if (kb==0) {
             $(this).css("background-color", "#FFF07F");
@@ -1085,14 +1087,14 @@ $(document).ready(function(){
     var ob= true;
     $("#ob").click(function(){
         if (ob==true) {
-            $( "#toggle" ).addClass("none");
-            $( "#toggle2" ).removeClass("none");
+            $( "#toggle" ).css( "opacity", "0");
+            $( "#toggle2" ).css( "opacity", "1");
                
             ob=false;
         }
         else {
-            $( "#toggle2" ).addClass("none");
-            $( "#toggle" ).removeClass("none");
+            $( "#toggle2" ).css( "opacity", "0");
+            $( "#toggle" ).css( "opacity", "1");
 
             ob=true;
         }    
@@ -1102,14 +1104,14 @@ $(document).ready(function(){
 
     $("#pb").click(function(){
         if (ob==true) {
-            $( "#toggle" ).addClass("none");
-            $( "#toggle2" ).removeClass("none");
+            $( "#toggle" ).css( "opacity", "0");
+            $( "#toggle2" ).css( "opacity", "1");
                
             ob=false;
         }
         else {
-            $( "#toggle2" ).addClass("none");
-            $( "#toggle" ).removeClass("none");
+            $( "#toggle2" ).css( "opacity", "0");
+            $( "#toggle" ).css( "opacity", "1");
 
             ob=true;
         }    
@@ -1295,7 +1297,7 @@ $(document).ready(function(){
             $( "#trip" + cc ).css( "background-color", "black");
         }
         else {
-            $( "#trip" + cc ).css( "background-color", "gray");
+            $( "#trip" + cc ).css( "background-color", "white");
         }
         
         cc++;
